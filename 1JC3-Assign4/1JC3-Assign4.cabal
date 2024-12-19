@@ -1,0 +1,72 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.37.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           1JC3-Assign4
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/1JC3-Assign4#readme>
+homepage:       https://github.com/githubuser/1JC3-Assign4#readme
+bug-reports:    https://github.com/githubuser/1JC3-Assign4/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2018 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/1JC3-Assign4
+
+library
+  exposed-modules:
+      Assign_4
+  other-modules:
+      Paths_1JC3_Assign4
+  hs-source-dirs:
+      src
+  build-depends:
+      QuickCheck
+    , base >=4.7 && <5
+    , containers
+    , hint
+    , hspec
+    , random
+  default-language: Haskell2010
+
+executable 1JC3-Assign4-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_1JC3_Assign4
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      1JC3-Assign4
+    , QuickCheck
+    , base >=4.7 && <5
+    , containers
+    , hint
+    , hspec
+    , random
+  default-language: Haskell2010
+
+test-suite 1JC3-Assign4-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_1JC3_Assign4
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      1JC3-Assign4
+    , QuickCheck
+    , base >=4.7 && <5
+    , containers
+    , hint
+    , hspec
+    , random
+  default-language: Haskell2010
